@@ -1,5 +1,29 @@
-// $theme-colors: (
-//     "info": tomato,
-//     "danger": teal
-// );
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* Colores personalizados */
+$theme-colors: (
+    "general-bg": #2F303A,
+    "object-bg": #202027,
+    "nav-hover":#202027,
+    "input-border":#2E3852,
+    "input-border-focus":#596da0,
+    "button-bg":#1762A7,
+    "button-hover":#2180d8,
+    "button-focus":#2796ff,
+    "text-accent":#2796ff,
+    "circle-1-bg":rgba(188,58,128,0.1),
+    "circle-2-3-b":rgba(52,87,178,0.1)
+);
+
+/* Fuente customizada */
+$font: 'https://fonts.googleapis.com/css?family=Poppins' !default;
+$font-family-custom-sans-serif: "Poppins", sans-serif !default;
+$font-family-base: $font-family-custom-sans-serif !default;
+
+/* Colores generales del background */
+
+$body-bg:#2F303A;
+$body-color:white;
+$navbar-color:white;
+
 @import "~bootstrap/scss/bootstrap";

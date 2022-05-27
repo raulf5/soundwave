@@ -1,7 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 const Menu = () => (
-    <Navbar>
-        {"Menú"}
+    <Navbar className='navbar-section' bg='object-bg' sticky="top">
     </Navbar>
 )
 
