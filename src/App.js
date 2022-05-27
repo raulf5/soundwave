@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Menu from './components/Menu';
+import Main from './components/Main';
+import Join from './components/Join';
+import Discover from './components/Discover';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React en Factoría F5
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Row><Menu /></Row>
+      <Row><Main/></Row>
+      <Row><Discover /></Row>
+      <Row><Join /></Row>
+
+    </>
   );
 }
 
