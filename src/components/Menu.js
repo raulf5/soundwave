@@ -3,8 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import logo from '../images/logo.png';
 const Menu = () => (
-    <Navbar className='navbar-section' bg='object-bg' fixed="top">
-        <Container>
+    <Navbar className='navbar__section h-60' bg='object-bg' fixed="top">
+        <Container fluid>
             <Navbar.Brand href="#home">
                 <img
                     src={logo}

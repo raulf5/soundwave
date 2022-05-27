@@ -1,13 +1,18 @@
 @import "custom";
 
+$firstCircleSize:100px;
+$secondCircleSize:200px;
 
 /* Navbar styles */
+.navbar__section {
+    height: 5rem ;
+    padding: 0 20vw;
+    a {
+        color: inherit !important;
 
-.navbar-section a {
-    color: inherit !important;
-
-    &:hover {
-        color: $navbar-hover  !important;
+        &:hover {
+            color: $navbar-hover  !important;
+        }
     }
 }
 
@@ -15,12 +20,91 @@
 
 .main__section {
     height: 100vh;
+    overflow: hidden;
+
+    &__container {
+        overflow: hidden;
+    }
 
     &__image {
-        height: 70vh;
+        height: auto;
+        min-width: 480px;
+        max-width: 520px;
+        width: 30vw;
+        display: none;
     }
 
     &__text__paragraph {
         max-width: 330px;
     }
+
+    &__button{
+        font-size:0.8rem;
+
+    }
+    &__circle {
+        border-radius: 50%;
+        position: absolute;
+
+        &__1 {
+            bottom: 50px;
+            left: 20px;
+            height: $firstCircleSize;
+            width: 100px;
+            background-color: rgba(188, 58, 128, 0.1);
+            z-index: 999;
+
+        }
+
+        &__2 {
+
+            top: 100px;
+            left: 150px;
+            height: $firstCircleSize;
+            width: 100px;
+            background-color: rgba(52, 87, 178, 0.1);
+            z-index: 999;
+        }
+
+        &__3 {
+            bottom: calc(-1/2 * $secondCircleSize);
+            right: calc(-1/2 * $secondCircleSize);
+            height: $secondCircleSize;
+            width: 200px;
+            background-color: rgba(52, 87, 178, 0.1);
+            ;
+            z-index: 999;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    $secondCircleSize:1000px;
+    .main__section{
+
+    &__circle__1{
+        bottom: 100px;
+        left: 100px;
+        height: 500px;
+        width: 500px;
+        z-index:-1;
+    }
+    &__circle__2{
+        top: 100px;
+        left: 600px;
+        height: 500px;
+        width: 500px;
+        z-index:-1;
+    }
+        &__circle__3{
+            bottom: calc(-1/2 * $secondCircleSize);
+            right: calc(-1/2 * $secondCircleSize);
+            height: $secondCircleSize;
+            width: $secondCircleSize;
+        }
+        &__image {
+            display: block;
+            z-index:999;
+        }
+}
 }
