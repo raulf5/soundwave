@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 
 const Join = () => (
     <>
-
     <Row><section>{"Join"}</section></Row>
     <Row><Footer/></Row>
     </>

@@ -3,6 +3,19 @@
 
 /* Navbar styles */
 
-a{
-    color:$navbar-color !important;
+.navbar-section a{
+    color:inherit  !important;
+&:hover{
+    color:$navbar-hover !important;
+}
+}
+
+/* Main Section */
+
+.main-section{
+    height:100vh;
+}
+
+.girl{
+    height:70vh;
 }

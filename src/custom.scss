@@ -4,6 +4,7 @@
 $theme-colors: (
     "general-bg": #2F303A,
     "object-bg": #202027,
+    "nav-text":#fff,
     "nav-hover":#202027,
     "input-border":#2E3852,
     "input-border-focus":#596da0,
@@ -25,5 +26,6 @@ $font-family-base: $font-family-custom-sans-serif !default;
 $body-bg:#2F303A;
 $body-color:white;
 $navbar-color:white;
+$navbar-hover:#202027;
 
 @import "~bootstrap/scss/bootstrap";
