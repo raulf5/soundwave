@@ -18,11 +18,11 @@ $theme-colors: (
 
 /* Fuente customizada */
 $font: 'https://fonts.googleapis.com/css?family=Poppins' !default;
+$font-size:1.2rem !default;
 $font-family-custom-sans-serif: "Poppins", sans-serif !default;
 $font-family-base: $font-family-custom-sans-serif !default;
-
+$font-size-base: $font-size !default;
 /* Colores generales del background */
-
 $body-bg:#2F303A;
 $body-color:white;
 $navbar-color:white;

@@ -3,19 +3,24 @@
 
 /* Navbar styles */
 
-.navbar-section a{
-    color:inherit  !important;
-&:hover{
-    color:$navbar-hover !important;
-}
+.navbar-section a {
+    color: inherit !important;
+
+    &:hover {
+        color: $navbar-hover  !important;
+    }
 }
 
 /* Main Section */
 
-.main-section{
-    height:100vh;
-}
+.main__section {
+    height: 100vh;
 
-.girl{
-    height:70vh;
+    &__image {
+        height: 70vh;
+    }
+
+    &__text__paragraph {
+        max-width: 330px;
+    }
 }
